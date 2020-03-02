@@ -1,0 +1,9 @@
+info:
+    path: /api/exchange/info
+    controller: App\Controller\InfoController::info
+convert:
+    path: /api/exchange/{units}/{fromCurr}/{toCurr}
+    controller: App\Controller\ConvertController::convert
+clearCache:
+    path: /api/cache/clear
+    controller: App\Controller\CacheController::clearCache
