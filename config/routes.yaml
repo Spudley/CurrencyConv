@@ -7,3 +7,10 @@ convert:
 clearCache:
     path: /api/cache/clear
     controller: App\Controller\CacheController::clearCache
+default:
+    path: /{default}
+    controller: App\Controller\DefaultController::default
+    requirements:
+        default: .+
+    defaults:
+        default: nothing
